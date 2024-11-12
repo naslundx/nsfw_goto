@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "nsfw_goto"
-version = "0.1.0"
+version = "0.2.0"
 description = "A stable and dangerous goto implementation for Python"
 authors = ["Marcus Näslund <naslundx@gmail.com>"]
 license = "MIT"
