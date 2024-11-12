@@ -30,13 +30,11 @@ if x < 3:
 print(x)
 ```
 
-In this example, the goto(line=4) will jump the execution back to line 4, causing the code to repeat itself until the condition x < 3 is no longer met.
-Jumping Between Methods
+In this example, the goto(4) will jump the execution back to line 4, causing the code to repeat itself until the condition x < 3 is no longer met.
 
 The goto functionality even allows jumping between methods. Here’s an example demonstrating how it works across different method calls:
 
 ```python
-
 from nsfw_goto import goto
 
 global_value = 0
@@ -54,7 +52,7 @@ if global_value == 0:
     foo()
 ```
 
-In this example, the code jumps from the foo() method to bar() method, preserving the global_value and attempting to use local_value. While goto allows control flow jumps across functions, be cautious about local scope variables and potential errors.
+The code jumps from inside the foo() method to inside bar() method, preserving the values of both global_Value and local_value.
 
 
 ## Development
